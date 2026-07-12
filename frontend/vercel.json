@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "rewrites": {
+    "/api/(.*)": "https://ai-chat-backend.onrender.com/api/$1"
+  },
+  "env": {
+    "BACKEND_URL": "https://ai-chat-backend.onrender.com"
+  }
+}
