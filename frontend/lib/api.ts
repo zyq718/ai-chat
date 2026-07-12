@@ -14,7 +14,7 @@ function getApiBase(): string {
     // 浏览器端：优先用 localStorage 中保存的后端地址
     try {
       const raw = localStorage.getItem("api_base_url");
-      if (raw) return raw.replace(/\/$+$/, "") + "/api";
+      if (raw) return raw.replace(/\/+$/, "") + "/api";
     } catch {}
   }
   // 默认相对路径（同源部署或开发环境代理）

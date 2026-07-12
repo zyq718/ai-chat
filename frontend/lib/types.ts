@@ -25,6 +25,7 @@ export interface ConversationDetail extends Conversation {
 export interface Persona {
   key: string;
   name: string;
+  description?: string;
 }
 
 export interface ChatResponse {
